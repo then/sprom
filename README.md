@@ -2,6 +2,9 @@
 
 Convert node.js Streams into Promises
 
+[![Build Status](https://travis-ci.org/then/sprom.png?branch=master)](https://travis-ci.org/then/sprom)
+[![Dependency Status](https://gemnasium.com/then/sprom.png)](https://gemnasium.com/then/sprom)
+
 ## Installation
 
     $ npm install sprom
