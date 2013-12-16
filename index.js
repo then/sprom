@@ -18,9 +18,6 @@ exports.buf = buf;
 function buf(strm) {
   return promise(function (resolve, reject) {
     strm.on('error', reject);
-    strm.pipe(concat(function (err, res) {
-      if (err) return reject(err);
-      else return resolve(res);
-    }));
+    strm.pipe(concat(resolve));
   });
 }
