@@ -1,6 +1,6 @@
 {
   "name": "sprom",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Convert node.js Streams into Promises",
   "scripts": {
     "test": "mocha -R spec"
