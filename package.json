@@ -13,7 +13,7 @@
   "license": "MIT",
   "dependencies": {
     "concat-stream": "~0.1.1",
-    "promise": "~2.0.0"
+    "promise": ">= 3 < 4"
   },
   "devDependencies": {
     "through": "~2.3.1",
