@@ -1,21 +1,22 @@
-var promise = require('promise');
-var concat = require('concat-stream');
+'use strict';
+var Promise = require('promise')
+var concat = require('concat-stream')
 
-exports = (module.exports = buf);
+exports = module.exports = buf
 
-exports.end = end;
+exports.end = end
 function end(strm) {
-  return promise(function (resolve, reject) {
-    strm.on('error', reject);
-    strm.resume(); //make compatible with v0.10 streams
-    strm.on('end', resolve);
-  });
+  return new Promise(function(resolve, reject) {
+    strm.on('error', reject)
+    strm.resume() //make compatible with v0.10 streams
+    strm.on('end', resolve)
+  })
 }
 
-exports.buf = buf;
+exports.buf = buf
 function buf(strm) {
-  return promise(function (resolve, reject) {
-    strm.on('error', reject);
-    strm.pipe(concat(resolve));
-  });
+  return new Promise(function(resolve, reject) {
+    strm.on('error', reject)
+    strm.pipe(concat(resolve))
+  })
 }
