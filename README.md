@@ -38,7 +38,7 @@ Get a promise that is resolved when the stream has ended.  This won't make any a
 
 ### sprom.buf(stream)
 
-Get a promise that buffers the contents of the stream using `concat-stream` and then returns a promise for the concatenated results.
+Buffers the contents of the stream using `concat-stream` and returns a promise for the concatenated results.
 
 ## License
 
