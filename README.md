@@ -40,6 +40,10 @@ Get a promise that is resolved when the stream has ended.  This won't make any a
 
 Buffers the contents of the stream using `concat-stream` and returns a promise for the concatenated results.
 
+### sprom.arr(stream)
+
+Buffers the contents of the stream into an array and returns a promise for the array.
+
 ## License
 
 MIT
