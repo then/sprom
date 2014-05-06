@@ -12,7 +12,7 @@
   "author": "ForbesLindesay",
   "license": "MIT",
   "dependencies": {
-    "concat-stream": "^1.2.1",
+    "concat-stream": ">=1.2.1 <2",
     "promise": ">=3 <6"
   },
   "devDependencies": {
